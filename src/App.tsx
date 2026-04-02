@@ -132,7 +132,7 @@ export default function App() {
             </div>
 
             {/* Mobile/Tablet Media (Hidden on Desktop) */}
-            <div className="flex lg:hidden flex-col gap-4 relative w-[100vw] left-1/2 -translate-x-1/2 shrink-0 overflow-hidden mask-horizontal-fade mt-12">
+            <div className="flex lg:hidden flex-col gap-2 md:gap-4 relative w-[100vw] left-1/2 -translate-x-1/2 shrink-0 overflow-hidden mask-horizontal-fade mt-6 md:mt-12">
               {/* Row 1 */}
               <motion.div 
                 initial={{ opacity: 0 }}
@@ -552,10 +552,10 @@ export default function App() {
         </div>
 
         {/* Carousel Container */}
-        <div ref={testimonialCarouselRef} className="flex gap-6 overflow-hidden pb-8 px-6 lg:px-12 hide-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <div ref={testimonialCarouselRef} className="flex gap-6 overflow-x-auto lg:overflow-hidden pb-8 px-6 lg:px-12 hide-scrollbar snap-x snap-mandatory" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           
           {/* Card 0 (Partial Left) */}
-          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px]">
+          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px] snap-center">
             <p className="text-[18px] leading-snug text-dark mb-8 flex-grow font-medium">
               "The best moving experience I've ever had. They were professional, fast, and took great care of my belongings."
             </p>
@@ -569,7 +569,7 @@ export default function App() {
           </div>
 
           {/* Card 1 */}
-          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px]">
+          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px] snap-center">
             <p className="text-[18px] leading-snug text-dark mb-8 flex-grow font-medium">
               I was worried about damage, but every piece arrived just as it left. Highly recommend! The movers were on time, courteous.
             </p>
@@ -583,7 +583,7 @@ export default function App() {
           </div>
 
           {/* Card 2 (Image Background) */}
-          <div className="shrink-0 w-[305px] rounded-[32px] p-8 flex flex-col h-[420px] relative overflow-hidden text-white">
+          <div className="shrink-0 w-[305px] rounded-[32px] p-8 flex flex-col h-[420px] relative overflow-hidden text-white snap-center">
             <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Derrick Warner" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10"></div>
             <div className="relative z-10 flex flex-col h-full justify-end">
@@ -598,7 +598,7 @@ export default function App() {
           </div>
 
           {/* Card 3 */}
-          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px]">
+          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px] snap-center">
             <p className="text-[18px] leading-snug text-dark mb-8 flex-grow font-medium">
               I was dreading the move, but they made it so easy. Everything arrived safely and on time. The team was respectful and helpful.
             </p>
@@ -612,7 +612,7 @@ export default function App() {
           </div>
 
           {/* Card 4 */}
-          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px]">
+          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px] snap-center">
             <p className="text-[18px] leading-snug text-dark mb-8 flex-grow font-medium">
               The crew was friendly, fast, and incredibly organized. They handled our large furniture with ease and didn't leave a scratch.
             </p>
@@ -626,7 +626,7 @@ export default function App() {
           </div>
           
           {/* Card 5 (Partial Right) */}
-          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px]">
+          <div className="shrink-0 w-[305px] bg-[#F4F4F4] rounded-[32px] p-8 flex flex-col h-[420px] snap-center">
             <p className="text-[18px] leading-snug text-dark mb-8 flex-grow font-medium">
               "Fantastic service from start to finish. The pricing was transparent and the movers were incredibly efficient."
             </p>

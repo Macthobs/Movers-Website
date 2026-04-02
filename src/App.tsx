@@ -23,7 +23,7 @@ export default function App() {
           <div className="flex items-center justify-between h-20">
             <a href="#" className="text-2xl font-heading font-bold tracking-tight text-dark flex items-center gap-2">
               <svg className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor"><path d="M2 12L12 2l10 10-10 10L2 12z"/></svg>
-              Movilo™
+              NYSLLC
             </a>
             <nav className="hidden md:flex items-center gap-8">
               <a href="#" className="text-sm font-medium text-dark hover:text-primary transition-colors">Home</a>
